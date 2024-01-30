@@ -3,18 +3,37 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+}
+
+.center-div {
+
 }
 
 #container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 440px;
+    width: 700px;
     height: auto;
+    margin: 0;
 }
 
 #container > #grid {
-    height: 25px;
-    width: 25px;
-    border: 0.5px solid black;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0;
+}
+
+#changeGrid {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    margin-bottom: 15px;
+    width: 700px;
+    height: 100px;
+    
+
 }

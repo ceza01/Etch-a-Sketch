@@ -14,12 +14,12 @@ for (let i = 1; i <= 16; i++){
 }
 
 
-let colorHoover = ["pink", "purple", "red", "yellow"];
+let colorHoover = ["pink"];
 const grids = document.querySelectorAll(".color");
 
 grids.forEach((grid) => {
     grid.addEventListener('mouseover', () => {
-        grid.style.backgroundColor = colorHoover[(Math.floor(Math.random() * colorHoover.length))];
+        grid.style.backgroundColor = colorHoover;
     })
     
 });
