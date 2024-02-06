@@ -1,8 +1,11 @@
-/*const div = document.createElement("div");
-div.id = "grid";
-container.appendChild(div);*/
+let changeGrid = 16;
 
-// create 16x16 divs
+function gridChange() {
+    let userGrid = parseInt(prompt("How many squares per side you want? (100 max)"));
+    changeGrid = userGrid
+}
+
+
 for (let i = 1; i <= 16; i++){
     for (let j = 1; j <= 16; j++){
         const newDiv = document.createElement('div');
@@ -13,13 +16,12 @@ for (let i = 1; i <= 16; i++){
     }
 }
 
-
-let colorHoover = ["pink"];
+let colorHoover = ["purple"];
 const grids = document.querySelectorAll(".color");
 
 grids.forEach((grid) => {
     grid.addEventListener('mouseover', () => {
         grid.style.backgroundColor = colorHoover;
     })
-    
 });
+
