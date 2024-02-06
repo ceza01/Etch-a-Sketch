@@ -1,10 +1,7 @@
-let changeGrid = 16;
-
 function gridChange() {
     let userGrid = parseInt(prompt("How many squares per side you want? (100 max)"));
-    changeGrid = userGrid
+    return userGrid;
 }
-
 
 for (let i = 1; i <= 16; i++){
     for (let j = 1; j <= 16; j++){
@@ -12,7 +9,6 @@ for (let i = 1; i <= 16; i++){
         newDiv.id = 'grid';
         newDiv.classList.add('color');
         container.appendChild(newDiv);
-
     }
 }
 
